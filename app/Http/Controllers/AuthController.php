@@ -37,7 +37,7 @@ class AuthController extends Controller
             //rollback data
             DB::rollBack();
 
-            dd($error);
+            dd($error->getMessage());
         }
     }
 
